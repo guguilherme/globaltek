@@ -7,6 +7,8 @@ section.kv {
     width: 100%;
     overflow: hidden;
     z-index: 2;
+    background: rgb(16,126,199);
+background: linear-gradient(180deg, rgba(16,126,199,1) 37%, rgba(0,0,0,1) 100%);
     /*background-image: url(../../../files/images/bg-car-mecanic.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -114,6 +116,7 @@ section.kv .botoes{
     justify-content: space-around;
     margin-top: 280px;
     width: 400px;
+    padding: 50px 0;
     z-index: 2;
 }
 
