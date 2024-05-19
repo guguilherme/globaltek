@@ -1,0 +1,254 @@
+section.protecao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 80px;
+    background: linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+    background: -webkit-linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+    overflow: hidden;
+}
+
+section.protecao .imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+section.protecao .imagem .foto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: fotoMexendo 10s linear infinite;
+}
+
+@keyframes fotoMexendo {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+section.protecao .imagem .circulo{
+    position: absolute;
+    border-radius: 50%;
+}
+
+section.protecao .imagem .circulo.um{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 30px 30px 0 #ffffff2a;
+    animation: girandoCirculo 5s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+
+section.protecao .imagem .circulo.dois{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 -30px 40px 0 #ffffff2a;
+    animation: girandoCirculo 4s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+
+section.protecao .imagem .circulo.tres{
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 50px 50px 0 #ffffff2a;
+    animation: girandoCirculo 3s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+
+@keyframes girandoCirculo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+section.protecao .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    z-index: 2;
+}
+
+section.protecao .texto h2{
+    font-family: var(--bold);
+    font-size: var(--f6);
+    color: var(--cor-branco);
+    text-transform: uppercase;
+    line-height: 1;
+    max-width: 400px;
+}
+
+section.protecao .texto h2 span{
+    color: var(--cor-azul);
+}
+
+section.protecao .texto p{
+    font-family: var(--regular);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+    opacity: 0.7;
+    line-height: 1.5;
+    max-width: 400px;
+    margin: 20px 0 25px 0;
+}
+
+
+section.protecao .texto a{
+    font-family: var(--bold);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+    background-color: var(--cor-azul);
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+section.protecao .texto a:hover{
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+
+
+
+@media screen and (max-width: 500px){
+    section.protecao{
+        flex-direction: column;
+    }
+    
+    section.protecao .imagem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+    
+    section.protecao .imagem .foto{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        animation: fotoMexendo 10s linear infinite;
+    }
+    
+    @keyframes fotoMexendo {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(0.8);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    
+    section.protecao .imagem .circulo{
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    section.protecao .imagem .circulo.um{
+        width: 220px;
+        height: 220px;
+        box-shadow: 0 30px 30px 0 #ffffff2a;
+        animation: girandoCirculo 5s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    
+    section.protecao .imagem .circulo.dois{
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 -30px 40px 0 #ffffff2a;
+
+        
+        animation: girandoCirculo 4s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    
+    section.protecao .imagem .circulo.tres{
+        width: 400px;
+        height: 400px;
+        box-shadow: 0 50px 50px 0 #ffffff2a;
+        animation: girandoCirculo 3s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    
+    @keyframes girandoCirculo {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    
+    
+    
+    section.protecao .texto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 30px;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    section.protecao .texto h2{
+        font-family: var(--bold);
+        font-size: var(--f5);
+        color: var(--cor-branco);
+        text-transform: uppercase;
+        line-height: 1;
+        max-width: 400px;
+    }
+    
+    section.protecao .texto h2 span{
+        color: var(--cor-azul);
+    }
+    
+    section.protecao .texto p{
+        font-family: var(--regular);
+        font-size: var(--f2);
+        color: var(--cor-branco);
+        opacity: 0.7;
+        line-height: 1.5;
+        max-width: 400px;
+        margin: 20px 0 25px 0;
+    }
+    
+    
+    section.protecao .texto a{
+        font-family: var(--bold);
+        font-size: var(--f2);
+        color: var(--cor-branco);
+        background-color: var(--cor-azul);
+        padding: 15px 25px;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    
+    section.protecao .texto a:hover{
+        background-color: var(--cor-branco);
+        color: var(--cor-preto);
+    }
+    }

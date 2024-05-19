@@ -1,0 +1,29 @@
+@import '../global/global.css';
+
+@import './partials/nav.css';
+
+@import './partials/section-apresentacao.css';
+
+@import './partials/section-faixa.css';
+
+@import './partials/section-produtos.css';
+
+@import './partials/section-pelicula.css';
+
+@import './partials/section-kv.css';
+
+@import './partials/section-protecao.css';
+
+@import './partials/section-quemsomos.css';
+
+@import './partials/section-ninja.css';
+
+@import './partials/section-quemusa.css';
+
+@import './partials/section-garantia.css';
+
+@import './partials/section-formulario.css';
+
+@import './partials/section-obrigado.css';
+
+@import './partials/footer.css';

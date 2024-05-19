@@ -1,0 +1,21 @@
+:root {
+
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-azul: #1DA6FF;
+    --cor-verde: #24ce73;
+    --cor-cinza: #373737;
+    
+
+    --regular: 'fonte-regular' ;
+    --bold: 'fonte-bold' ;
+
+    --f1: clamp(0.8rem, 1vw, 1rem);
+    --f2: clamp(1rem, 1vw, 1.2rem);
+    --f3: clamp(1.2rem, 1vw, 1.5rem);
+    --f4: clamp(1.5rem, 1vw, 2rem);
+    --f5: clamp(2.3rem, 1vw, 4rem);
+    --f6: clamp(4rem, 1vw, 6rem);
+    --f7: clamp(5rem, 1vw, 8rem);
+
+}

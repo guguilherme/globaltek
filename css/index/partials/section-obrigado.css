@@ -1,0 +1,150 @@
+section.obrigado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+    background: -webkit-linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+    overflow: hidden;
+    position: relative;
+}
+
+section.obrigado .quadro{
+    text-align: center;
+    color: var(--cor-branco);
+    font-family: var(--regular);
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    z-index: 2;
+    position: relative;
+}
+
+section.obrigado .quadro h3{
+    font-family: var(--bold);
+    padding-bottom: 15px;
+}
+
+section.obrigado .quadro p{
+    width: 500px;
+}
+
+section.obrigado .quadro .botao{
+    margin-top: 50px;
+    width: 500px;
+}
+
+section.obrigado .quadro a{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    padding: 15px 100px;
+    border-radius: 10px;
+}
+
+section.obrigado .quadro a:hover{
+    background-color: #1DA6FF;
+    transition: all 0.3s;
+}
+
+section.obrigado .roda{
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+section.obrigado .roda.roda1 {
+    width: 800px;
+    height: 800px;
+    box-shadow: 0 30px 30px 0 #ffffff2a;
+    animation: girandoCirculo 5s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+section.obrigado .roda.roda2 {
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 50px 30px 0 #ffffff2a;
+    animation: girandoCirculo 4s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+section.obrigado .roda.roda3 {
+    width: 450px;
+    height: 450px;
+    box-shadow: 0 -30px 30px 0 #ffffff2a;
+    animation: girandoCirculo 3s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+
+
+
+@media screen and (max-width: 500px){
+    section.obrigado{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+        background: -webkit-linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    section.obrigado .quadro{
+        width: 90%;
+        padding: 40px;
+        position: absolute;
+        text-align: center;
+    }
+    
+    
+    section.obrigado .quadro p{
+        width: 100%;
+    }
+    
+    section.obrigado .quadro .botao{
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    section.obrigado .quadro a{
+        background-color: var(--cor-preto);
+        color: var(--cor-branco);
+        padding: 15px 50px;
+        border-radius: 10px;
+    }
+
+
+    
+    section.obrigado .roda{
+        position: absolute;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    
+    section.obrigado .roda.roda1 {
+        width: 800px;
+        height: 800px;
+        box-shadow: 0 30px 30px 0 #ffffff2a;
+        animation: girandoCirculo 5s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    section.obrigado .roda.roda2 {
+        width: 600px;
+        height: 600px;
+        box-shadow: 0 50px 30px 0 #ffffff2a;
+        animation: girandoCirculo 4s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    section.obrigado .roda.roda3 {
+        width: 450px;
+        height: 450px;
+        box-shadow: 0 -30px 30px 0 #ffffff2a;
+        animation: girandoCirculo 3s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+}

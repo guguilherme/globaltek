@@ -1,0 +1,150 @@
+section.ninja {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+    background: -webkit-linear-gradient(40deg, #1DA6FF, #0b6eb0, #045b94, #1DA6FF);
+    overflow: hidden;
+    position: relative;
+}
+
+section.ninja .desenho{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+section.ninja .desenho .roda{
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+section.ninja .desenho .roda.roda1 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 30px 30px 0 #ffffff2a;
+    animation: girandoCirculo 5s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+section.ninja .desenho .roda.roda2 {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 50px 30px 0 #ffffff2a;
+    animation: girandoCirculo 4s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+section.ninja .desenho .roda.roda3 {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 -30px 30px 0 #ffffff2a;
+    animation: girandoCirculo 3s linear infinite;
+    border-top: 1px solid var(--cor-branco);
+}
+
+
+
+section.ninja .desenho img{
+    width: 500px;
+    max-width: 505px;
+    z-index: 3;
+}
+
+section.ninja .textos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section.ninja .textos h2{
+    color: var(--cor-branco);
+    font-family: var(--bold);
+    font-size: var(--f6);
+    max-width: 600px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+section.ninja .textos p{
+    font-family: var(--regular);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+    opacity: 0.7;
+    line-height: 1.5;
+    max-width: 400px;
+    margin: 20px 0 25px 0;
+}
+
+
+
+
+
+@media screen and (max-width: 500px){
+    section.ninja {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    
+    section.ninja .desenho{
+        width: 100%;
+    }
+    
+    section.ninja .desenho .roda.roda1 {
+        width: 250px;
+        height: 250px;
+        box-shadow: 0 30px 30px 0 #ffffff2a;
+        animation: girandoCirculo 5s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    section.ninja .desenho .roda.roda2 {
+        width: 350px;
+        height: 350px;
+        box-shadow: 0 40px 30px 0 #ffffff2a;
+        animation: girandoCirculo 4s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    section.ninja .desenho .roda.roda3 {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 -30px 30px 0 #ffffff2a;
+        animation: girandoCirculo 3s linear infinite;
+        border-top: 1px solid var(--cor-branco);
+    }
+    
+    
+    
+    section.ninja .desenho img{
+        width: 500px;
+        max-width: 500px;
+        z-index: 3;
+    }
+    
+    section.ninja .textos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    section.ninja .textos h2{
+        padding-top: 60px;
+        font-size: var(--f5);
+        max-width: 300px;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    
+    section.ninja .textos p{
+        max-width: 300px;
+        margin: 20px 0 25px 0;
+    }
+}
