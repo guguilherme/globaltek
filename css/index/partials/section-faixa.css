@@ -35,7 +35,7 @@ section.faixa .quadro p {
 @media screen and (max-width: 500px) {
     section.faixa {
         flex-wrap: wrap;
-        padding: 0px 30px 50px 30px;
+        padding: 50px 30px 50px 30px;
     }
     
     section.faixa .quadro{

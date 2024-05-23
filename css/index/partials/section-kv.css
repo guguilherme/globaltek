@@ -7,8 +7,11 @@ section.kv {
     width: 100%;
     overflow: hidden;
     z-index: 2;
-    background: rgb(16,126,199);
-background: linear-gradient(180deg, rgba(16,126,199,1) 37%, rgba(0,0,0,1) 100%);
+    background-color: #303030;
+    background-image: radial-gradient(circle at center center, rgba(16,126,199,1), #303030), repeating-radial-gradient(circle at center center, rgba(16,126,199,1), rgba(16,126,199,1), 9px, transparent 18px, transparent 9px);
+    background-blend-mode: multiply;
+    /*background: rgb(16,126,199);
+    background: linear-gradient(180deg, rgba(16,126,199,1) 37%, rgba(0,0,0,1) 100%);*/
     /*background-image: url(../../../files/images/bg-car-mecanic.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -64,7 +67,7 @@ section.kv .texto{
 section.kv .texto img{
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 6;
     padding-top: 110px;
 }
 
@@ -72,6 +75,7 @@ section.kv .texto img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 60px 80px;
     background: rgba(0, 0, 0, 0.13);
     border-radius: 25px;
@@ -81,6 +85,7 @@ section.kv .texto img{
     border: 1px solid rgba(143, 143, 143, 0.24);
     z-index: 2;
     margin-top: 90px;
+    position: relative;
 }
 
 section.kv .texto h1{
@@ -157,15 +162,18 @@ section.kv .botoes a:hover{
         flex-direction: column;
         width: 100%;
         overflow: hidden;
-        height: 100vh;
+        height: 600px;
         background-position: center;
         background-size: cover;
         padding: 0 20px;
+        background-color: #303030;
+        background-image: radial-gradient(circle at center center, rgba(16,126,199,1), #303030), repeating-radial-gradient(circle at center center, rgba(16,126,199,1), rgba(16,126,199,1), 9px, transparent 18px, transparent 9px);
+        background-blend-mode: multiply;
     }
 
     section.kv .texto img{
         width: 100%;
-        max-width: 400px;
+        max-width: 320px;
         position: absolute;
         z-index: 5;
         padding-top: 100px;
@@ -175,7 +183,7 @@ section.kv .botoes a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 60px 80px;
+        padding: 150px 80px 20px 80px;
         background: rgba(0, 0, 0, 0);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
