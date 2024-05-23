@@ -14,24 +14,23 @@
     <nav>
         <img src="./files/images/logo.png" alt="" class="logo">
         <div class="opcoes">
-            <a href="">Home</a>
-            <a href="">Sobre</a>
-            <a href="">Produtos</a>
-            <a href="">Contato</a>
-            <a href="">Representantes</a>
-            <a href="" class="destaque">Garantia</a>
+            <a href="#kv">Home</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#quemsomos">Sobre</a>
+            <a href="#garantia">Garantia</a>
+            <a href="#formulario" class="destaque">Contato</a>
 
         </div>
     </nav>
 
-    <section class="kv">
+    <section class="kv" id="kv">
         <div class="blush um"></div>
         <div class="blush dois"></div>
         <div class="espelho">
             <div class="texto">
                 <h2 data-aos="fade-right">Nanoteclogia <span style="color: #1DA6FF;">Americana</span></h2>
-                <h1 data-aos="fade-left">PELÍCULAS DE <br><span class="sombra-interna">ALTA QUALIDADE</span></h1>
-                <img src="/files/images/carro-frente.png" alt="">
+                <h1 data-aos="fade-right">PELÍCULAS DE <br><span class="sombra-interna">ALTA QUALIDADE</span></h1>
+                <img data-aos="fade-left" src="./files/images/Posicoes_0012_360_ext_v0004_Car.effectsResult.0012 (1).png" alt="">
                 <!--<p>Atuamos com a melhor película de redução de calor do Brasil.</p>-->
             </div>
             
@@ -99,7 +98,7 @@
         </div>
     </section>
 
-    <section class="produtos">
+    <section class="produtos" id="produtos">
         <div class="blush um"></div>
         <div class="blush dois"></div>
         <div class="titulo">
@@ -147,7 +146,7 @@
         </div>
     </section>
 
-    <section class="pelicula">
+    <section class="pelicula" >
         <div class="quadro">
             <div class="blush um"></div>
             <div class="blush dois"></div>
@@ -194,7 +193,7 @@
         </div>
     </section>
 
-    <section class="protecao">
+    <section class="protecao" id="protecao">
         <div class="imagem">
             <div class="foto" style="background-image: url('./files/images/imagem-protecao.jpg');"></div>
             <div class="circulo um"></div>
@@ -208,7 +207,7 @@
         </div>
     </section>
 
-    <section class="quemsomos">
+    <section class="quemsomos" id="quemsomos">
         <div class="blush um"></div>
         <div class="blush dois"></div>
         <div class="titulo">
@@ -343,7 +342,7 @@
         </div>
     </section>
 
-    <section class="garantia">
+    <section class="garantia" id="garantia">
         <div class="quadro">
             <div class="blush um"></div>
             <div class="blush dois"></div>
@@ -378,7 +377,7 @@
     </div>
     </section>
 
-    <section class="formulario">
+    <section class="formulario" id="formulario">
         <div class="blush um"></div>
         <div class="blush dois"></div>
         <div class="quadro">
@@ -398,7 +397,7 @@
                 </div>
                 <div class="input icone">
                     <img src="/files/images/icone-form-telefone.png" alt="">
-                    <input type="text" name="number" placeholder="(00) 0000-0000">
+                    <input type="tel" name="number" pattern="\d{11}" maxlength="11" placeholder="(00) 0000-0000" required>
                 </div>
                 <div class="input">
                     <img src="" alt="">
@@ -406,7 +405,7 @@
                 </div>
                 <div class="input">
                     <img src="" alt="">
-                    <input type="text" name="message" placeholder="Mensagem">
+                    <input type="text" name="message" placeholder="Mensagem" required>
                 </div>
 
 

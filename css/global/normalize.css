@@ -11,7 +11,7 @@
 
 body, html{
     background-color: var(--cor-preto);
-    
+    scroll-behavior: smooth;
 }
 
 ::selection {
